@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BioRhyme&display=swap" rel="stylesheet">
+    <title>Resume</title>
+</head>
+<body>
+    
+    <div id="container">
+        <header>
+             <div class="mobheader">
+                <h3>Makinde Tolulope</h3>
+                <p id ="front"></p>
+             </div>
+
+    
+            <nav>
+                <a href="#about"> <img src="profile.png" title="About Me"></a>
+                <a href="#ex"><img src="work.png" title="Education&Experience"></a>
+                <a href="#skill"><img src="skill.png" title="Skills"></a>
+                <a href="#contact"><img src="contact.png" title="Contact"></a>
+    
+            </nav>
+        </header>
+    
+        <div id="name">
+            <div class="cover">
+        
+                <div class="covercont">
+                        <h1>Makinde Tolulope</h1>
+                        <p>Frontend Developer</p>
+                    <div>
+                        <a href="https://internship.zuri.team/" target="_blank"><img src="zuri.jfif" alt="Zuri"></a>
+                        <a href="https://hng.tech/" target="_blank"><img src="hng.png" alt="HNG"></a>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+
+    
+        <div id="content">
+            <div>
+                <h2 id="about">About Me</h2>
+                <p>I am a hardworking and motivated Frontend web developer that has acquired extensive knowledge in this field via online bootcamps,youtube tutorials and searching of useful resources and documentation which basically makes me self-taught.</p>
+            </div>
+
+            <div>
+                <h2 id="ex">Education and Experience</h2>
+                <p>I am currently a student of Bells University majoring in Computer science. I've participated in
+                    <ul class="fa-ul">
+                        <li><i class="fa-li fa fa-spinner fa-spin"></i>Java</li>
+                        <li><i class="fa-li fa fa-spinner fa-spin"></i>Microsoft word</li> 
+                        <li><i class="fa-li fa fa-spinner fa-spin"></i>Microsoft Servers</li>
+                    </ul>
+                 New Horizon in my school.
+                 HNG internships is another platform i'm currently in to boost my Experience. </p>
+            </div>
+
+            <div>
+                <h2 id="skill">Skills</h2>
+                <p>
+                    <ul>
+                        <li>HTML <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></li> 
+                        <li>CSS <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></li>
+                        <li>SASS <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></li>
+                        <li>Javascript <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></li>
+                        <li>ReactJs <i class="fa fa-star"></i></li>
+                    </ul>
+                </p>
+            </div>
+
+
+            <div>
+                <h2 id="contact">Contact</h2>
+                <p>
+                    <a href="mailto:kingtoluene@gmail.com"><i class="fa fa-envelope" ></i></a>
+                    <a href="https://twitter.com/kvnq_chase"><i class="fa fa-twitter"></i></a>
+                    <a href="https://github.com/void-4"><i class="fa fa-github"></i></a>
+                    <a href="https://www.google.com.ng/maps/place/Ogun+State/@6.5986633,3.3550413,12.31z/data=!4m5!3m4!1s0x103b0deeeb1087cb:0xae67d82f51409ce8!8m2!3d6.9979747!4d3.4737378?hl=en"><i class="fa fa-map-marker"></i></a> 
+            
+                </p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script>
+        let txt = "Frontend Developer";
+        let count = 0;
+    (function printName(){
+        if(count < txt.length) {
+            document.getElementById("front").innerHTML += txt.charAt(count);
+            count++;
+            setTimeout(printName,100);
+        }}())
+
+    
+    </script>
+</body>
+</html>
