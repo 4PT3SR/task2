@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Name</title>
+    <style>
+        body {
+    background-color:black;
+    /* color: rgb(212, 209, 209); */
+    color: white;
+    font-family: cursive;
+    font-size: 25px;
+}
+
+#container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+h1::after {
+    content: "";
+    border-right: 2px solid white;
+    height: 100px;
+    animation: blink 0.5s infinite ease;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+img[src='zuri.jfif'] {
+    position: absolute;
+    right: 5px;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+    </style>
+</head>
+<body>
+    <div id="container"><h1 id="name"></h1></div>
+
+
+    <a href="https://hng.tech/" target="_blank" ><img src="hng.png" alt="hng" srcset=""></a>
+    <a href="https://internship.zuri.team/" target="_blank" ><img src="zuri.jfif" alt="zuri" srcset=""></a>
+    <script>
+        let name = "Makinde Tolulope.";
+        let count = 0;
+    (function printName(){
+        if(count < name.length) {
+            document.getElementById("name").innerHTML += name.charAt(count);
+            count++;
+            setTimeout(printName,100);
+        }}())
+
+    </script>
+</body>
+</html>
